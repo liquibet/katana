@@ -1,0 +1,8 @@
+#!/usr/bin/expect
+
+log_user 0
+spawn jshell -s
+expect ">"
+log_user 1
+send "/open katana-startup.jsh\r"
+interact
